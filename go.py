@@ -54,7 +54,7 @@ for tid,ruledata in getRuleData_command_lol_bins.iteritems():
 	for rule in dedupe_ruledata:
 		print "Potential detection indicator: {}".format(rule)
 
-#create rules for command executor dev_tools atomics
+#print rules for command executor dev_tools atomics
 print "Command executor - dev bins"
 for tid,ruledata in getRuleData_command_dev_bins.iteritems():
 	dedupe_ruledata = Set(ruledata)
@@ -62,21 +62,21 @@ for tid,ruledata in getRuleData_command_dev_bins.iteritems():
 		print "Potential detection indicator: {}".format(rule)
 
 
-#create rules for powershell executor cmd_interp atomics
+#print rules for powershell executor cmd_interp atomics
 print "Powershell executor - cmd_interps"
 for tid,ruledata in getRuleData_powershell_cmd_interps.iteritems():
 	dedupe_ruledata = Set(ruledata)
 	for rule in dedupe_ruledata:
 		print "Potential detection indicator: {}".format(rule)
 
-#create rules for powershell executor lol_bin atomics
+#print rules for powershell executor lol_bin atomics
 print "Powershell executor - lol bins"
 for tid,ruledata in getRuleData_powershell_lol_bins.iteritems():
 	dedupe_ruledata = Set(ruledata)
 	for rule in dedupe_ruledata:
 		print "Potential detection indicator: {}".format(rule)
 
-#create rules for powershell executor dev_tools atomics
+#print rules for powershell executor dev_tools atomics
 print "Powershell executor - dev bins"
 for tid,ruledata in getRuleData_powershell_dev_bins.iteritems():
 	dedupe_ruledata = Set(ruledata)
